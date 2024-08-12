@@ -33,12 +33,13 @@
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 15px;
     }
-    .color{background-color: rgb(173, 165, 181);width: 300px;border-radius: 10px 10px;margin: auto;box-shadow: 10px 10px 10px white;padding: 10px;}
+    .color{background-color: rgb(173, 165, 181);width: 350px;border-radius: 10px 10px;margin: auto;box-shadow: 10px 10px 10px white;padding: 10px;}
 </style>
 
 <body>
     <div id="text">
-    <details><summary style="background-color: black;color: yellow;">Cadastro</summary>
+    <details><summary style="background-color: black;color: yellow;box-shadow: 10px 10px 10px yellow;">Cadastro</summary>
+        <br>
     <div class="color">
     <div class="campo1">
         <h1>Cadastro de DEVs</h1>
@@ -90,25 +91,25 @@
             </select>
         </div>
         <fieldset class="grupo">
-            <div id="checkbox">
-                <label><b style="color: white;">Selecione as</b> <b style="color: black;">Tecnologias que utiliza :</b></label>
+                <label><b style="color: white;">Selecione as</b> <b style="color: rgb(255, 255, 255);">Tecnologias que utiliza :</b></label>
                 <br>
                 <br>
-                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
-                <label for="tecnologia1">HTML</label>
-                <input type="checkbox" id="tecnologia2" value="CSS" name="tecnologia2"> 
+                <div class="checkbox">
+                <label for="tecnologia1"><b style="color: yellow;">Html</b></label>
+                <input type="checkbox" id="tecnologia1" value="Html" name="tecnologia1"> 
                 <label
-                for="tecnologia2">CSS</label>
+                for="tecnologia2"><b style="color: yellow; font-family: 'Times New Roman', Times, serif;">CSS</b></label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                <label for="tecnologia3"><b style="color: yellow; font-family: 'Times New Roman', Times, serif;">Javascript</b></label>
                 <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascript">
-                <label for="tecnologia3">Javascript</label>
+                <label for="tecnologia4"><b style="color: yellow; font-family: 'Times New Roman', Times, serif;">PHP</b></label>
                 <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
-                <label for="tecnologia4">PHP</label>
-                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
-                <label for="tecnologia5">C#</label>
+                <label for="tecnologia5"><b style="color: yellow; font-family: 'Times New Roman', Times, serif;">C#</b></label>
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="C#">
+                <label for="tecnologia6"><b style="color: yellow; font-family: 'Times New Roman', Times, serif;">Python</b></label>
                 <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
-                <label for="tecnologia6">Python</label>
-                <input type="checkbox" id="tecnologia7" name="tecnologia7" value="JAVA">
-                <label for="tecnologia7">Java</label>
+                <label for="tecnologia7"><b style="color: yellow; font-family: 'Times New Roman', Times, serif;">Java</b></label>
+                <input type="checkbox" for="tecnologia7" name="tecnologia7" value="Java">
             </div>
         </fieldset>
         <div class="campo">
