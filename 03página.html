@@ -34,6 +34,7 @@
         font-size: 15px;
     }
     .color{background-color: rgb(173, 165, 181);width: 350px;border-radius: 10px 10px;margin: auto;box-shadow: 10px 10px 10px white;padding: 10px;}
+    .color2{background-color: white;width: 100px;margin: auto;border-radius: 10px 10px;box-shadow: 2px 2px 2px red;}
 </style>
 
 <body>
@@ -63,13 +64,15 @@
             <div class="campo"><label for="Nascimento"><b>Nascimento</b></label>
                 <input type="text" name="Nascimento" id="Nascimento" required>
             </div>
-        </fieldset>
         <div class="campo">
             <label for="Email"><b>E-mail</b></label>
             <input type="email" name="email" id="email" required>
         </div>
+        </fieldset>
         <div class="campo">
             <label><b style="color: white;">De qual lado da aplicação você desenvolve?</b></label>
+            <br>
+            <div class="color2">
             <label>
                 <input type="radio" name="devweb" value="front-end" ><b style="color: black;text-shadow: 10px;">Front-end</b>
             </label>
@@ -81,7 +84,8 @@
             </label>
         </div>
         <div class="campo">
-            <label for="Senioridade"><b>Senioridade</b></label>
+            <br>
+            <label for="Senioridade"><b style="color: red;">Senioridade</b></label>
             <select id="Senioridade">
                 <option selected disabled value="">Selecione...</option>
                 <option>Junior</option>
