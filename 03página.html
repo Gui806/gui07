@@ -11,7 +11,7 @@
 <style>
     body {
         text-align: center;
-        background: linear-gradient(to right, white, orange, white);margin-left: 36%;margin-top: 2%;justify-content: center;
+        background: linear-gradient(to right,black,orange,black);justify-content: center;
     }
 
     h1 {
@@ -33,11 +33,16 @@
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 15px;
     }
+    .color{background-color: rgb(173, 165, 181);width: 300px;border-radius: 10px 10px;margin: auto;box-shadow: 10px 10px 10px white;padding: 10px;}
 </style>
 
 <body>
+    <div id="text">
+    <details><summary style="background-color: black;color: yellow;">Cadastro</summary>
+    <div class="color">
     <div class="campo1">
         <h1>Cadastro de DEVs</h1>
+        <br>
         <p>Complete suas Informações</p>
     </div>
     <form>
@@ -63,15 +68,15 @@
             <input type="email" name="email" id="email" required>
         </div>
         <div class="campo">
-            <label>De qual lado da aplicação você desenvolve?</label>
+            <label><b style="color: white;">De qual lado da aplicação você desenvolve?</b></label>
             <label>
-                <input type="radio" name="devweb" value="front-end" checked>Front-end
+                <input type="radio" name="devweb" value="front-end" ><b style="color: black;text-shadow: 10px;">Front-end</b>
             </label>
             <label>
-                <input type="radio" name="devweb" value="back-end">Back-end
+                <input type="radio" name="dev-web" value="back-end" ><b style="color: black;text-shadow: 10px;">Back-end</b>
             </label>
             <label>
-                <input type="radio" name="dev-web" value="full-stack">Full Stack
+                <input type="radio" name="dev-web" value="full-stack"><b style="color: black;text-shadow: 10px;">Full-Stack</b>
             </label>
         </div>
         <div class="campo">
@@ -86,7 +91,7 @@
         </div>
         <fieldset class="grupo">
             <div id="checkbox">
-                <label>Selecione as <b style="color: black;">tecnologias que utiliza :</b></label>
+                <label><b style="color: white;">Selecione as</b> <b style="color: black;">Tecnologias que utiliza :</b></label>
                 <br>
                 <br>
                 <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
@@ -108,14 +113,18 @@
         </fieldset>
         <div class="campo">
             <br>
-            <label>Conte um pouco da sua experiência:</label>
+            <label> <b style="color: white;text-shadow: 10px ;">Conte um pouco de sua </b><b style="color: red;">Experiência</b></label>
             <textarea row="6"
-            style="background-color: aqua;border-radius: 10px 10px; width: 26em;" id="experiência" name="experiência"></textarea>
+            style="background-color: rgb(255, 255, 255);border-radius: 10px 10px; width: 300px;height: 100px;" id="experiência" name="experiência"></textarea>
         </div>
         <button class="Botao" type="submit">Conclúido</button>
     </form>
+    </div>
     <br>
-    <p>Retorne para minha <a href="index.html" target="_blank" rel="external" style="color: black;background-color: aqua;border-radius: 10px 10px;">1ªPágina</a></p>
+    <p>Retorne para minha <a href="index.html" target="_blank" rel="external" style="color: yellow;background-color: rgb(0, 0, 0);border-radius: 10px 10px;">1ªPágina</a></p>
+    <br>
+    </details>
+    </div>
     <script src="script.js"></script>
     <script>showAlert("welcome my formulary")</script>
 </body>
